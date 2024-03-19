@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+{% block title %}{{parent()}}L2DSI2{% endblock %}
+{% block body %}
+<h1>Hello {{a}}</h1>
+<h1>le :{{date("+3 years+3 months-1 day")|date('d/m/Y')}}</h1>
+<h1>date :2/20/23
+{% if date('2/2/23')<date("-2 years") %}
+cette date est plus que 2ans {% endif %}
+</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi atque eveniet labore at totam natus porro consequuntur quaerat. In sed veritatis suscipit iure, nostrum ducimus ut error officiis quos est!</p>
+{% endblock %}
